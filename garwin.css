@@ -1,0 +1,276 @@
+
+
+#wrapper {
+background: black;
+
+}
+
+#page1 {
+  width: 100%;
+  height: 1000px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#138490, #5aa972); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#138490, #5aa972); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#138490, #5aa972); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#138490, #5aa972); /* Standard syntax */
+
+
+}
+
+.sunwrap {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+-webkit-transform: rotate(0deg) ;
+}
+
+.sun {
+  position: relative;
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.star {
+  position: absolute;
+  margin: auto;
+}
+
+.rays {
+  position: absolute;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+   -webkit-animation: animationName 5s infinite;
+   -moz-animation: animationName 5s infinite;
+   -o-animation: animationName 5s infinite;
+    animation: animationName 5s infinite;
+}
+
+@keyframes animationName {
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@-o-keyframes animationName{
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@-moz-keyframes animationName{
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}
+@-webkit-keyframes animationName{
+  0%   { opacity:0.5; }
+  50%  { opacity:1; }
+  100% { opacity:0.5; }
+}   
+
+.star img, .rays img{
+  width: 100%;
+}
+
+
+#page2 {
+  width: 100%;
+  height: 1000px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5aa972, #fff5c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5aa972, #fff5c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5aa972, #fff5c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5aa972, #fff5c3); /* Standard syntax */
+}
+
+#page3 {
+  width: 100%;
+  height: 1000px;
+    background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff5c3, #f7a661); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff5c3, #f7a661); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff5c3, #f7a661); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff5c3, #f7a661); /* Standard syntax */
+    position: relative;
+}
+
+#page4 {
+  width: 100%;
+  height: 1000px;
+      background: #3b0849;
+      z-index: 2;
+      position: relative;
+}
+
+h1 {
+  color: #000;
+  font-family: 'Arvo', serif;
+  font-size: 24pt; 
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.thumbnail {
+  min-width: 138px;
+  max-width: 200px;
+  width: 10%;
+  margin: 5px;
+  box-shadow: 0px 0px 5px 1px #2a584e ;
+}
+
+#gallery a {
+  text-decoration: none;
+  border: none;
+}
+
+#gallery {
+  width: 80%;
+  min-width: 300px;
+  padding: 50px 10px;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+#profile {
+  width: 80%;
+  min-width: 300px;
+  padding: 50px 10px;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.profilesection {
+  width: 80%;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.75);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Arvo', serif;
+  font-size: 18pt; 
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt; 
+  text-align: justify;
+  line-height: 15pt;
+  margin: 10px 0px;
+}
+li {
+  color: #000;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt; 
+  text-align: justify;
+  line-height: 15pt;
+}
+
+strong {
+  font-weight: bold;
+}
+
+hr {
+  border-bottom: black solid 1px;
+  margin: 30px auto;
+}
+
+
+.mountain {
+background: url(images/mountain.png) center;
+height: 560px;
+bottom: 0;
+width: 100%;
+z-index: 2;
+position: absolute;
+-webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+-webkit-transform: rotate(0deg) ;
+}
+
+.contactform {
+margin: auto;
+display: block;
+
+}
+
+/* nav bar - Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    display: inline-block;
+    z-index: 500;
+    width: 100%;
+    text-align: center;
+}
+
+/* Float the list items side by side */
+ul.topnav li {display: inline-block;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    font-family: 'PT Sans', sans-serif;
+	font-size: 18pt; 
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li a:active {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: fixed;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
