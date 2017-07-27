@@ -204,6 +204,7 @@ position: absolute;
 .contactform {
 margin: auto;
 display: block;
+    max-width: 368px;
 
 }
 
